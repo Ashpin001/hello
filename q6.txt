@@ -1,5 +1,10 @@
-Q6: Use kubectl commands to create, scale, and manage Kubernetes resources like pods and deployments.
+Q6: Use kubectl commands to create, scale, and manage Kubernetes resources like pods and deployments..
 
+
+0.
+******IMPORTANT*****
+{Turn on kubernetes in docker} 
+on left panle of docker 
 -----------------------------
 1. Create a Pod
 -----------------------------
