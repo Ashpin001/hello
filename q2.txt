@@ -52,6 +52,6 @@ Execution Summary:
 -----------------------------
 - Flask app created
 - Dockerfile defines container
-- Image built using docker build
+- Image built using docker build.
 - Container run using docker run
 - Image pushed using docker push
