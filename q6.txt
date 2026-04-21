@@ -55,4 +55,4 @@ Execution Summary:
 - kubectl scale → increase/decrease pods
 - kubectl expose → create service
 - kubectl get → view resources
-- kubectl delete → remove resources
+- kubectl delete → remove resources.
