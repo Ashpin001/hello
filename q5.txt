@@ -17,6 +17,8 @@ docker run -d \
 # Get admin password
 docker exec jenkins cat /var/jenkins_home/secrets/initialAdminPassword
 
+##you will get the pass from above command use that for login 
+
 Open browser:
 http://localhost:8080
 - Paste password
