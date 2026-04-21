@@ -1,47 +1,216 @@
-Q1: Perform Git operations to commit, push, merge branches, and create a pull request on GitHub.
+Q: Perform Git operations to commit, push, merge branches, and create a pull request on GitHub
 
-1. Initialize Repository
+---
+
+1. INTRODUCTION
+
+---
+
+Git is a distributed version control system used to track changes in code.
+GitHub is a cloud platform used to host Git repositories and collaborate.
+
+This task includes:
+
+* Commit changes
+* Push to remote repository
+* Create and merge branches
+* Create a Pull Request
+
+---
+
+2. INITIAL SETUP
+
+---
+
+## Step 1: Create project folder
+
+mkdir git-project
+cd git-project
+
+## Step 2: Initialize Git repository
+
 git init
 
-2. Add and Commit Files
+## Step 3: Create a sample file
+
+echo "Hello Git" > file.txt
+
+---
+
+3. COMMIT CHANGES
+
+---
+
+## Step 1: Add files to staging area
+
 git add .
+
+## Step 2: Commit changes
+
 git commit -m "Initial commit"
 
-3. Connect to Remote Repository
-git remote add origin https://github.com/ViknanS/exam1.git
+---
+
+4. CONNECT TO GITHUB REPOSITORY
+
+---
+
+Step 1: Create a new repository on GitHub
+
+## Step 2: Add remote repository
+
+git remote add origin https://github.com/ageesh46/git-project.git
+
+## Step 3: Set branch to main
+
 git branch -M main
+
+---
+
+5. PUSH CODE TO GITHUB
+
+---
+
+## Command:
+
 git push -u origin main
 
-4. Create New Branch
+This uploads local commits to GitHub.
+
+---
+
+6. CREATE A NEW BRANCH
+
+---
+
+## Step 1: Create branch
+
+git branch feature-branch
+
+## Step 2: Switch to branch
+
+git checkout feature-branch
+
+## OR (shortcut):
+
 git checkout -b feature-branch
 
-5. Make Changes and Commit
-echo "New Feature" > feature.txt
-git add feature.txt
+---
+
+7. MAKE CHANGES IN BRANCH
+
+---
+
+## Example:
+
+echo "Feature added" >> file.txt
+
+git add .
 git commit -m "Added new feature"
 
-6. Push Feature Branch
+---
+
+8. PUSH BRANCH TO GITHUB
+
+---
+
+## Command:
+
 git push origin feature-branch
 
-7. Merge Branch into Main
+---
+
+9. MERGE BRANCH (LOCAL METHOD)
+
+---
+
+## Step 1: Switch to main branch
+
 git checkout main
+
+## Step 2: Merge branch
+
 git merge feature-branch
 
-8. Push Merged Code
+## Step 3: Push updated main branch
+
 git push origin main
+------
+end it here
+------
 
-9. Create Pull Request (GitHub Steps)
-- Go to repository on GitHub
-- Click "Compare & pull request"
-- Add title and description
-- Click "Create pull request"
-- Click "Merge pull request"
 
-Execution Summary:
-git init → initialize repository
-git add → stage files
-git commit → save changes
-git push → upload to GitHub
-git branch → create branch
-git merge → combine branches
-pull request → merge using GitHub UI
+
+
+
+
+---
+
+10. CREATE PULL REQUEST (GITHUB METHOD)
+
+---
+
+Steps:
+
+1. Go to your repository on GitHub
+2. Click "Compare & pull request"
+3. Select:
+   Base branch: main
+   Compare branch: feature-branch
+4. Add title and description
+5. Click "Create pull request"
+
+---
+
+11. MERGE PULL REQUEST
+
+---
+
+Steps:
+
+1. Open the Pull Request
+2. Click "Merge pull request"
+3. Click "Confirm merge"
+
+---
+
+13. VERIFY CHANGES
+
+---
+
+## Commands:
+
+git log
+git status
+git branch
+
+---
+
+14. WORKFLOW SUMMARY
+
+---
+
+1. Initialize repository
+2. Add and commit files
+3. Push to GitHub
+4. Create new branch
+5. Make changes and commit
+6. Push branch
+7. Create Pull Request
+8. Merge branch
+9. Delete branch (optional)
+
+---
+
+15. FINAL NOTES
+
+---
+
+* Always pull before pushing to avoid conflicts
+* Use branches for new features
+* Use Pull Requests for collaboration
+* Keep commit messages clear and meaningful
+
+---
+
+## END OF ANSWER
