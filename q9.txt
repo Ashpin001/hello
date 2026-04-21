@@ -38,4 +38,4 @@ Execution Summary:
 - git clone → copy repository
 - git add → stage changes
 - git commit → save changes
-- git push → upload changes to GitHub
+- git push → upload changes to GitHub.
